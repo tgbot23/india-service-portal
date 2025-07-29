@@ -1,61 +1,48 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #f0f4ff, #e0f7fa);
-  min-height: 100vh;
-}
-
-.App {
-  text-align: center;
-  padding: 30px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 h1 {
-  font-size: 2rem;
-  color: #0d47a1;
-  margin-bottom: 30px;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-  padding: 20px 30px;
   text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  margin: 0;
+}
+
+.section {
+  background: white;
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.section ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.section li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.section li a {
+  color: #007bff;
   text-decoration: none;
-  color: #1a237e;
-  font-weight: 600;
-  font-size: 16px;
-  width: 220px;
-  transition: transform 0.2s, background-color 0.3s;
+  font-weight: 500;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  background-color: #e3f2fd;
-}
-
-@media (max-width: 600px) {
-  .card {
-    width: 90%;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-/* Add this at the bottom of App.css */
-h2 {
-  font-size: 1.4rem;
-  color: #1565c0;
-  margin: 30px 0 15px;
-  text-align: center;
+.section li a:hover {
+  text-decoration: underline;
 }
