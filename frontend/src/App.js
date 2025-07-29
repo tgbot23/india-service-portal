@@ -3,61 +3,54 @@ import './App.css';
 function App() {
   const categories = [
     {
-      title: "🔹 Aadhaar Services",
+      title: "🆔 Aadhaar Services",
       links: [
-        { name: "Aadhaar Portal", url: "https://uidai.gov.in" },
-        { name: "Download Aadhaar", url: "https://eaadhaar.uidai.gov.in/" },
-        { name: "Check Aadhaar Status", url: "https://myaadhaar.uidai.gov.in/CheckAadhaarStatus" },
-        { name: "Aadhaar Update", url: "https://ssup.uidai.gov.in/ssup/" },
-        { name: "Find Aadhaar Center", url: "https://appointments.uidai.gov.in/easearch.aspx" }
+        { name: "Download Aadhaar", url: "https://myaadhaar.uidai.gov.in/genricDownloadAadhaar/en" },
+        { name: "Order PVC Aadhaar Card", url: "https://myaadhaar.uidai.gov.in/genricPVC/en" },
+        { name: "Check Aadhaar-Mobile Link", url: "https://myaadhaar.uidai.gov.in/check-aadhaar-validity/en" },
+        { name: "Aadhaar Seeding Status", url: "https://tathya.uidai.gov.in/access/login?role=resident" },
+        { name: "Lock/Unlock Aadhaar", url: "https://myaadhaar.uidai.gov.in/lock-unlock-aadhaar/en" },
+        { name: "Update Aadhaar Online", url: "https://myaadhaar.uidai.gov.in/" }
       ]
     },
     {
-      title: "🔹 PAN Card",
+      title: "🧾 PAN Card Services",
       links: [
-        { name: "Apply PAN", url: "https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" },
-        { name: "Track PAN Status", url: "https://tin.tin.nsdl.com/pantan/StatusTrack.html" }
+        { name: "Instant e-PAN (Free, Aadhaar OTP based)", url: "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/instant-e-pan" },
+        { name: "Apply / Update PAN Card", url: "https://onlineservices.proteantech.in/paam/endUserRegisterContact.html" },
+        { name: "Download PAN Card", url: "https://onlineservices.proteantech.in/paam/requestAndDownloadEPAN.html" }
       ]
     },
     {
-      title: "🔹 Voter ID",
+      title: "🚗 RTO Services",
       links: [
-        { name: "Voter Portal", url: "https://voterportal.eci.gov.in/" },
-        { name: "Search Voter ID", url: "https://electoralsearch.eci.gov.in/" },
-        { name: "Download e-EPIC", url: "https://www.nvsp.in/Account/Login" }
+        { name: "Driving Licence Apply / Services", url: "https://sarathi.parivahan.gov.in/sarathiservice/stateSelection.do" },
+        { name: "Driving Licence Mobile Number Update", url: "https://sarathi.parivahan.gov.in/sarathiservice/mobNumUpdpub.do" },
+        { name: "Vehicle Mobile Number Update", url: "https://vahan.parivahan.gov.in/mobileupdate/" }
       ]
     },
     {
-      title: "🔹 RTPS Bihar & Certificates",
+      title: "⚡ Electricity (NBPDCL)",
       links: [
-        { name: "RTPS Bihar", url: "https://rtps.bihar.gov.in/" },
-        { name: "Caste Certificate", url: "https://serviceonline.bihar.gov.in/" },
-        { name: "Income Certificate", url: "https://serviceonline.bihar.gov.in/" },
-        { name: "Residential Certificate", url: "https://serviceonline.bihar.gov.in/" }
+        { name: "Check Balance / Recharge Now", url: "https://wss.nbpdcl.co.in/cportal/#/guest/secure/searchbill" }
       ]
     },
     {
-      title: "🔹 Electricity (NBPDCL/SBPDCL)",
+      title: "🗳️ Voter ID (including Bihar-specific)",
       links: [
-        { name: "NBPDCL Bill", url: "https://www.nbpdcl.co.in/" },
-        { name: "Bill Payment", url: "https://www.nbpdcl.co.in/PayOnline.aspx" },
-        { name: "View Bill", url: "https://www.nbpdcl.co.in/frmBillPaymentDetails.aspx" },
-        { name: "SBPDCL Website", url: "https://www.sbpdcl.co.in/" }
+        { name: "Check Status of Enumeration Form (Bihar)", url: "https://voters.eci.gov.in/home/enumFormTrack#" },
+        { name: "Search Name in Voter List (2003+, All India)", url: "https://voters.eci.gov.in/" },
+        { name: "Apply/Download Voter Card", url: "https://voters.eci.gov.in/" }
       ]
     },
     {
-      title: "🔹 RTO / Driving Licence",
+      title: "📜 RTPS Bihar Certificates",
       links: [
-        { name: "Parivahan Portal", url: "https://parivahan.gov.in/" },
-        { name: "Driving Licence Apply", url: "https://sarathi.parivahan.gov.in/sarathiservice/stateSelection.do" },
-        { name: "Vehicle Info (VAHAN)", url: "https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml" }
-      ]
-    },
-    {
-      title: "🔹 Education & Exam Boards",
-      links: [
-        { name: "CBSE Website", url: "https://cbse.gov.in/" },
-        { name: "LNMU Darbhanga", url: "https://lnmu.ac.in/" }
+        { name: "Residential Certificate (आवासीय)", url: "https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=4630009" },
+        { name: "Caste Certificate (जाति)", url: "https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=4650009" },
+        { name: "Income Certificate (आय)", url: "https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=4640008" },
+        { name: "EWS Certificate", url: "https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=10430011" },
+        { name: "OBC Certificate", url: "https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=9330009" }
       ]
     }
   ];
