@@ -1,50 +1,55 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fc;
+  color: #333;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
 h1 {
   text-align: center;
-  color: #333;
-  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 15px;
+  background: #fff;
+  border-radius: 18px;
   padding: 25px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+  text-align: left;
+  border: 1px solid #eaeaea;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  border-color: #d0d0d0;
 }
 
 .card h2 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #007bff;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #0b5ed7;
 }
 
 .card a {
   text-decoration: none;
-  color: #007bff;
+  color: #0b5ed7;
   font-weight: 500;
 }
 
