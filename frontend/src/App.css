@@ -52,3 +52,10 @@ h1 {
     font-size: 1.5rem;
   }
 }
+/* Add this at the bottom of App.css */
+h2 {
+  font-size: 1.4rem;
+  color: #1565c0;
+  margin: 30px 0 15px;
+  text-align: center;
+}
