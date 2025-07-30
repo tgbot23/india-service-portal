@@ -1,6 +1,14 @@
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-function App() {
+// Import new pages (you must create these in src/pages/)
+import About from './pages/About';
+import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Disclaimer from './pages/Disclaimer';
+
+function Home() {
   const categories = [
     {
       title: "🆔 Aadhaar Services",
@@ -77,6 +85,29 @@ function App() {
         </div>
       ))}
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      {/* Optional: Navbar */}
+      <nav style={{ padding: '10px', background: '#f5f5f5' }}>
+        <Link to="/" style={{ marginRight: '10px' }}>Home</Link>
+        <Link to="/about" style={{ marginRight: '10px' }}>About</Link>
+        <Link to="/contact" style={{ marginRight: '10px' }}>Contact</Link>
+        <Link to="/privacy-policy" style={{ marginRight: '10px' }}>Privacy</Link>
+        <Link to="/disclaimer" style={{ marginRight: '10px' }}>Disclaimer</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
+      </Routes>
+    </Router>
   );
 }
 
