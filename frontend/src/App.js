@@ -8,7 +8,7 @@ function App() {
         { name: "Download Aadhaar", url: "https://myaadhaar.uidai.gov.in/genricDownloadAadhaar/en" },
         { name: "Order PVC Aadhaar Card", url: "https://myaadhaar.uidai.gov.in/genricPVC/en" },
         { name: "Check Aadhaar-Mobile Link", url: "https://myaadhaar.uidai.gov.in/check-aadhaar-validity/en" },
-        { name: "Aadhaar Seeding Status", url: "https://tathya.uidai.gov.in/access/login?role=resident" },
+        { name: "Aadhaar Seeding Status", url: "https://myaadhaar.uidai.gov.in/bank-seeding-status" },
         { name: "Lock/Unlock Aadhaar", url: "https://myaadhaar.uidai.gov.in/lock-unlock-aadhaar/en" },
         { name: "Update Aadhaar Online", url: "https://myaadhaar.uidai.gov.in/" }
       ]
