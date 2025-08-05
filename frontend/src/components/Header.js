@@ -7,7 +7,7 @@ const Header = () => {
     <header className="main-header">
       <div className="container">
         <h1 className="logo">
-          <a href="https://onlineapplyhelp.in">OnlineApplyHelp</a>
+          <a href="https://www.onlineapplyhelp.in">OnlineApplyHelp</a>
         </h1>
         <nav className="nav-links">
           <a href="/">Home</a>
