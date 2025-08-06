@@ -3,12 +3,14 @@ import React, { useState } from 'react';
 import './Header.css';
 
 const Header = () => {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [query, setQuery] = useState('');
 
   const handleSearch = (e) => {
     e.preventDefault();
-    if (searchQuery.trim() !== '') {
-      window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`;
+    if (query.trim() !== '') {
+      // For now: redirect to Google search limited to your website
+      const searchURL = `https://www.google.com/search?q=site:onlineapplyhelp.in+${encodeURIComponent(query)}`;
+      window.open(searchURL, '_blank');
     }
   };
 
@@ -18,6 +20,7 @@ const Header = () => {
         <h1 className="logo">
           <a href="https://www.onlineapplyhelp.in">OnlineApplyHelp</a>
         </h1>
+
         <nav className="nav-links">
           <a href="/">Home</a>
           <a href="/about">About</a>
@@ -26,15 +29,14 @@ const Header = () => {
           <a href="/contact">Contact</a>
         </nav>
 
-        {/* 🔍 Search box added */}
         <form className="search-form" onSubmit={handleSearch}>
           <input
             type="text"
             placeholder="Search..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
           />
-          <button type="submit">Go</button>
+          <button type="submit">Search</button>
         </form>
       </div>
     </header>
