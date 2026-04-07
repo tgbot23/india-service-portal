@@ -1,12 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "http://onlineapplyhelp.in/:path*",
       "destination": "https://onlineapplyhelp.in/:path*",
       "permanent": true
     }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
   ]
 }
